@@ -78,11 +78,11 @@
                     <systemProperties>
                         <property>
                             <name>webdriver.chrome.driver</name>
-                            <value>${project.basedir}\WebDrivers\Chrome\chromedriver.exe</value>
+                            <value>${project.basedir}\WebDrivers\chromedriver.exe</value>
                         </property>
                         <property>
                             <name>webdriver.iexplorer.driver</name>
-                            <value>${project.basedir}\WebDrivers\InternetExplorer\IEDriverServer.exe</value>
+                            <value>${project.basedir}\WebDrivers\IEDriverServer.exe</value>
                         </property>
                     </systemProperties>
                     <argLine>-Dwebdriver.driver=${webdriver.driver}</argLine>
