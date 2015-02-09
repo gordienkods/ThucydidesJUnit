@@ -1,6 +1,8 @@
 package net.gordi.pages;
 
 import net.thucydides.core.annotations.DefaultUrl;
+import net.thucydides.core.annotations.NamedUrl;
+import net.thucydides.core.annotations.NamedUrls;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -9,13 +11,10 @@ import net.thucydides.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.findby.FindBy;
 import net.thucydides.core.pages.PageObject;
 
-@DefaultUrl("https://www.google.com.ua/")
+import javax.print.attribute.standard.Destination;
+
 public class DictionaryPage extends PageObject {
 
-    public void go_main_page(){
-        open();
-    }    
-    
     public String get_logo_text(){
         String logoText = null;
         try {

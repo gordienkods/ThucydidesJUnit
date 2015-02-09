@@ -1,12 +1,7 @@
 package net.gordi;
 
-import net.thucydides.core.annotations.Issue;
-import net.thucydides.core.annotations.ManagedPages;
-import net.thucydides.core.annotations.Pending;
-import net.thucydides.core.annotations.Steps;
-import net.thucydides.core.annotations.Story;
+import net.thucydides.core.annotations.*;
 import net.thucydides.core.pages.Pages;
-import net.thucydides.core.annotations.Managed;
 import net.thucydides.junit.runners.ThucydidesRunner;
 
 import org.junit.Test;
@@ -24,7 +19,7 @@ public class EnterSearchRequestTest {
     @Managed(uniqueSession = true)
     public WebDriver webdriver;
 
-    @ManagedPages(defaultUrl = "https://www.google.com.ua/")
+    @ManagedPages()
     public Pages pages;
 
     @Steps

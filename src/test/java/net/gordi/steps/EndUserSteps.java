@@ -14,7 +14,7 @@ import static org.hamcrest.Matchers.hasItem;
 public class EndUserSteps extends ScenarioSteps {
 
     DictionaryPage dictionaryPage;
-    
+
     @Step
     public void go_to_main_page() {
         dictionaryPage.open();
