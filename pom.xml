@@ -50,6 +50,7 @@
             <version>1.4</version>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -74,6 +75,18 @@
                     <systemPropertyVariables>
                         <webdriver.driver>${webdriver.driver}</webdriver.driver>
                     </systemPropertyVariables>
+                    <systemProperties>
+                        <property>
+                            <name>webdriver.chrome.driver</name>
+                            <value>${project.basedir}\WebDrivers\Chrome\chromedriver.exe</value>
+                        </property>
+                        <property>
+                            <name>webdriver.iexplorer.driver</name>
+                            <value>${project.basedir}\WebDrivers\InternetExplorer\IEDriverServer.exe</value>
+                        </property>
+                    </systemProperties>
+                    <argLine>-Dwebdriver.driver=${webdriver.driver}</argLine>
+
                 </configuration>
                 <executions>
                     <execution>
@@ -93,6 +106,7 @@
                     <target>1.5</target>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>net.thucydides.maven.plugins</groupId>
                 <artifactId>maven-thucydides-plugin</artifactId>
